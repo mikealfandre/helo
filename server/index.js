@@ -31,4 +31,5 @@ app.post('/auth/login', cr.login)
 //posts endpoints
 
 app.get('/api/posts/:userid', pc.getAll)
+app.post('/api/post/:userid', pc.newPost)
 

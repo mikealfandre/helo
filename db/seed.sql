@@ -10,3 +10,13 @@ ALTER COLUMN password SET DATA TYPE varchar(150);
 
 ALTER TABLE posts
 ADD COLUMN author_id integer REFERENCES users(id);
+
+insert into posts(
+    title,
+    img,
+    content,
+)values(
+    $1,
+    $2,
+    $3,
+); 
